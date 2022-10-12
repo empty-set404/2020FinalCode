@@ -29,6 +29,7 @@ public class UserController {
         }
 
         UserVo userVo = userService.login(username, password);
+        System.out.println("pppppppppp"+username+"  "+password);
         if (userVo == null) {
             return Resp.error().data("data", "用户名或密码错误");
         }

@@ -33,7 +33,6 @@ public class UserServiceImpl implements UserService {
             String token = MD5Utils.md5(Long.toString(user.hashCode() + System.currentTimeMillis()));
             BeanUtil.copyProperties(user, userVo);
             userVo.setToken(token);
-
             // 存到redis中
             redisClient.set("token", token);
 
