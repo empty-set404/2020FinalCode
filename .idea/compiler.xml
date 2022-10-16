@@ -17,13 +17,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="data" target="8" />
+      <module name="data" target="1.8" />
       <module name="mybatis" target="1.8" />
       <module name="probject" target="1.8" />
       <module name="redisClient" target="1.8" />
       <module name="spring" target="1.8" />
       <module name="tomcat" target="1.8" />
-      <module name="websocket" target="8" />
+      <module name="websocket" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -106,7 +106,7 @@ export default {
     login() {
       axios({
         method: "get",
-        url: "http://localhost:9874/login",
+        url: "http://localhost:8090/login",
         params: this.form
       }).then(res => {
         const { data } = res
@@ -120,7 +120,8 @@ export default {
     },
 
     init() {
-      this.ws = new WebSocket("ws://localhost:7886");
+      // this.ws = new WebSocket("ws://127.0.0.1:7886");
+      this.ws = new WebSocket("ws://127.0.0.1:8888");
       this.ws.onopen = () => {
         console.log("连接成功")
         this.loginRoom()

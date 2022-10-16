@@ -2,7 +2,7 @@
   <div class="Room" ref="room">
 
     <!--  webrtc  -->
-    <div id="videos" class="videos" v-if="webrtcFlag">
+    <div id="videos" class="videos" v-show="webrtcFlag">
       <div class="remote-main">
         <video ref="remoteVideo" id="remoteVideo" class="remote-video" controls autoplay></video>
       </div>

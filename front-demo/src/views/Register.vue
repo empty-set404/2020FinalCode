@@ -77,7 +77,7 @@ export default {
     register() {
       axios({
         method: "get",
-        url: "http://localhost:9874/register",
+        url: "http://localhost:8090/register",
         params: {
           ...this.form,
           avatar: this.currentImg
